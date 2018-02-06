@@ -1,5 +1,5 @@
 package generics.model;
 
-public interface Animal {
+public interface Animal{
     String getSpecies();
 }
