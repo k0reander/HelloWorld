@@ -6,7 +6,7 @@ public class Cat implements Animal, StrengthMeasurable {
 
     private Integer strength;
 
-    public Cat(Integer strength) {
+    public void setStrength(Integer strength) {
         this.strength = strength;
     }
 

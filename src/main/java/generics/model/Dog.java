@@ -5,7 +5,7 @@ public class Dog implements Animal, StrengthMeasurable {
     private static final String SPECIES = "Dog";
     private Integer strength;
 
-    public Dog(Integer strength) {
+    public void setStrength(Integer strength) {
         this.strength = strength;
     }
 
