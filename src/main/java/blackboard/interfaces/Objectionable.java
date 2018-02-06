@@ -1,4 +1,4 @@
-package blackboard.interfaces.questions;
+package blackboard.interfaces;
 
 public interface Objectionable {
 	

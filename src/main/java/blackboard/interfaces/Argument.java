@@ -1,6 +1,4 @@
-package blackboard.interfaces.arguments;
-
-import blackboard.interfaces.questions.Objectionable;
+package blackboard.interfaces;
 
 public class Argument implements Objectionable{
 
