@@ -1,0 +1,27 @@
+package generics.model;
+
+public class Cat implements Animal, StrengthMeasurable {
+
+    private static final String SPECIES = "Cat";
+
+    private Integer strength;
+
+    public Cat(Integer strength) {
+        this.strength = strength;
+    }
+
+    @Override
+    public String getSpecies() {
+        return SPECIES;
+    }
+
+    @Override
+    public Integer getStrength() {
+        return null;
+    }
+
+    @Override
+    public String toString() {
+        return getSpecies();
+    }
+}
