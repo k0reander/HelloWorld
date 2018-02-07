@@ -1,18 +1,16 @@
 package generics.model;
 
-import java.util.Date;
-
 public class Pair<X extends Animal, Y extends Animal> {
-    private Animal X;
-    private Animal Y;
+    private X x;
+    private Y y;
 
     public Pair(Animal x, Animal y) {
-        X = x;
-        Y = y;
+        x = x;
+        y = y;
     }
 
     @Override
     public String toString() {
-        return "Pair{" + X + " : " + Y + "}";
+        return "Pair{" + x + " : " + y + "}";
     }
 }
