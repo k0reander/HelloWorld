@@ -4,7 +4,13 @@ import generics.model.Cat;
 import generics.model.Dog;
 import generics.model.Pair;
 
+import java.util.Collection;
+
 public class Methods {
+
+    public static <A> A first(Collection<A> collection){
+        return collection.iterator().next();
+    }
 
     public static void printPair(Pair<?,?> pair){
         System.out.println(pair);

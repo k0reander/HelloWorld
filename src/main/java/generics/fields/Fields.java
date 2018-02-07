@@ -13,6 +13,7 @@ public class Fields {
         //Class slc = List<String>.class;
         //List<String>[] cages = new List<String>[10];
         List[] unknowns = new List<?>[10];
+        List<?>[] unknownstrings = new List[10];
         //Object o = new Object();
         //boolean maybe = o instanceof List<String>;
 
