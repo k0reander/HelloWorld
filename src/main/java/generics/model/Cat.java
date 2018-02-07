@@ -1,6 +1,6 @@
 package generics.model;
 
-public class Cat implements Animal, StrengthMeasurable {
+public class Cat implements Animal, StrengthMeasurable, Comparable<Animal> {
 
     private static final String SPECIES = "Cat";
 
@@ -23,5 +23,10 @@ public class Cat implements Animal, StrengthMeasurable {
     @Override
     public String toString() {
         return getSpecies();
+    }
+
+    @Override
+    public int compareTo(Animal o) {
+        return 0;
     }
 }
