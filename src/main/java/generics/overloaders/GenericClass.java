@@ -23,5 +23,19 @@ public final class GenericClass<T> {
         GenericClass<Integer> test = new GenericClass<Integer>();
         test.method(new ArrayList<Integer>());
         test.overloadedMethod(new ArrayList<Integer>());
+
+        WordBox<CharSequence> wbox = new WordBox<>("Abc");
+        wbox.reset("Hello");
     }
+}
+
+
+class Box <T> {
+    private T theThing;
+    public Box( T t)        { theThing = t; }
+    public void reset( T t) { theThing = t; }
+}
+class WordBox< S extends CharSequence > extends Box< String > {
+    public WordBox( S t)    { super(t.toString().toLowerCase()); }
+    public void reset( S t) { super.reset(t.toString().toLowerCase()); }
 }
