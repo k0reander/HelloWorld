@@ -24,7 +24,7 @@ public final class GenericClass<T> {
         test.method(new ArrayList<Integer>());
         test.overloadedMethod(new ArrayList<Integer>());
 
-        WordBox<CharSequence> wbox = new WordBox<>("Abc");
+        WordBox<String> wbox = new WordBox<>("Abc");
         wbox.reset("Hello");
     }
 }
